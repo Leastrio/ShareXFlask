@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>i.leastrio.net | {{ name }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://seasonal-css.incoherency.co.uk/seasonal.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Questrial|Didact+Gothic|Assistant');
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        /*GENERAL CSS*/
+
+
+        body, html {
+            background-color: #171717;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Montserrat', 'Halvetica', 'Arial', sans-serif;
+            overflow-x: hidden !important
+        }
+
+        .centered {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .centered > div {
+            float: none;
+            display: inline-block;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .container-fluid {
+            margin-left: 395px;
+            margin-right: 395px;
+        }
+
+        a, a:hover, a:focus, a:active, a.active {
+            outline: none;
+            text-decoration: none;
+        }
+
+        a {
+            color: 	var(--seasonal-hl);
+        }
+
+        a:hover, a:focus, a:active, a.active {
+            color: #19aba6;
+        }
+
+
+        /* NAVBAR CSS */
+
+        .navbar-default {
+            height: 80px;
+            background-color: #222222;
+            border: 0;
+        }
+
+        .navbar-default .navbar-brand {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 26px;
+            color: 	var(--seasonal-hl);
+        }
+
+        .navbar-default .navbar-brand:hover, .navbar-brand:focus {
+            color: 	var(--seasonal-hl);
+        }
+
+        .navbar-default .navbar-brand img {
+            margin-top: -5px;
+            width: 155px;
+        }
+
+        .navbar-default .navbar-nav li {
+            margin-top: 17px;
+        }
+
+        .navbar-default .navbar-nav li a {
+            font-size: 18px;
+            color: #fff;
+            transition: .3s ease-in-out;
+            -webkit-transition: .3s ease-in-out;
+        }
+
+        .navbar-default .navbar-nav li a:hover {
+            color: #19aba6;
+        }
+
+        .navbar-default .navbar-nav li .active {
+            color: #19aba6;
+        }
+
+        /* MAIN CSS */
+
+        #img {
+            width: 100%;
+        }
+
+        #img img {
+            transition: 1s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #info {
+            color: white;
+        }
+
+        #info .card {
+            transition: 1s;
+        }
+
+
+        #info .card > .header {
+            color: white;
+            font-size: 25px;
+            background-color: #19aba6;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        #info .card > .body {
+            color: white;
+            font-size: 20px;
+            background-color: #222222;
+            width: 100%;
+            padding: 15px;
+        }
+
+        #info .card > .body > .img-info > .item {
+            color: white;
+        }
+
+        #info .card > .body > .img-info > .item > span {
+            border-left: 3px solid var(--seasonal-hl);
+            padding-left: 7.5px;
+            color: var(--seasonal-hl);
+            font-weight: 400;
+        }
+
+        #info .card > .body > .view {
+            background-color: transparent;
+            border: 1px solid var(--seasonal-hl);
+            padding: 5px;
+            display: block;
+            text-align: center;
+            width: 50%;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            transition: 1s;
+            margin-top: 30px;
+        }
+
+        #info .card > .body > .view:hover {
+            background-color: var(--seasonal-hl);
+            width: 75%;
+        }
+
+        /* MODAL CSS */
+
+        .modal-xl {
+            width: 90%;
+        }
+
+        .modal-header {
+            color: white;
+            font-size: 25px;
+            background-color: #222222;
+            text-align: center;
+            border: 0;
+            border-bottom: 4px solid #333;
+        }
+
+        .modal-header > .modal-title {
+            font-size: 25px;
+        }
+
+        .modal-body {
+            color: white;
+            background-color: #1a1a1a;
+            border: 0;
+            border-bottom: 4px solid #333;
+        }
+
+        .modal-body > img {
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* FOOTER CSS */
+
+        #footer {
+            margin-top: 10px;
+        }
+
+        #footer .body {
+            background-color: #222222;
+            border-top: 4px solid #333333;
+        }
+
+        /* SCROLL BAR */
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 0px;
+            background: #19aba6;
+        }
+
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background: #19aba6;
+        }
+
+        /* HIGHTLIGHT COLOR */
+
+        ::selection {
+            background: #19aba6;
+            color: white;
+        }
+
+        ::-moz-selection {
+            background: #19aba6;
+            color: white;
+        }
+
+        @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+            .navbar-collapse {
+                margin-top: 15px;
+                background-color: #222;
+                border: 0;
+            }
+
+            .navbar-header button {
+                margin-top: 25px;
+                border: none;
+                color: #fff !important;
+            }
+
+            .navbar-header button .icon-bar {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" value="Leastrio">
+    <meta property="og:title" content="{{ name }}"/>
+    <meta property="og:url" content="i.leastrio.net"/>
+    <meta property="og:image" content="https://i.leastrio.net/raw/{{ name }}"/>
+    <meta property="og:image:url" content="https://i.leastrio.net/raw/{{ name }}"/>
+    <meta name="theme-color" content="var(--seasonal-hl)">
+</head>
+<body>
+
+<div style="height: 100px"></div>
+<div id="home">
+    <div class="container">
+        <div class="col-md-8">
+            <div id="img">
+                <img type="button" style='width:100%'
+                     src="{{ url_for('static', filename=image) }}">
+            </div>
+        </div>
+        <div class="col-md-4" id="info">
+            <div class="card">
+                <div class="body">
+                    <div class="img-info">
+                        <div class="item"><span>File Name:</span> {{ name }}</div>
+                        <div class="item"><span>Uploaded:</span> {{ upload }}</div>
+                        <div class="item"><span>File Type:</span> {{ type }}</div>
+                        <div class="item"><span>File Size:</span> {{ size }}</div>
+                    </div>
+                    <a href="raw/{{ name }}" class="view">Open Raw</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
