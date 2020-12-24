@@ -1,0 +1,13 @@
+﻿{
+  "Version": "13.3.0",
+  "Name": "ShareXFlask",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://example.com/upload",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "key": "123"
+  },
+  "FileFormName": "file",
+  "URL": "$json:url$"
+}
