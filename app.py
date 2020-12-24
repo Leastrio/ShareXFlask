@@ -92,6 +92,11 @@ def upload_image():
         resp.status_code = 400
         return resp
 
+@app.errorhandler(404) 
+def not_found(e): 
+    return render_template("404.html") 
 
+    
+ 
 if __name__ == '__main__':
     app.run()
